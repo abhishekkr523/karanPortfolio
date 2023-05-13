@@ -6,6 +6,7 @@
 body {
     background-color: #1f242d;
     color: #fff;
+    overflow-x: hidden;
 }
 .header {
     position: fixed;
