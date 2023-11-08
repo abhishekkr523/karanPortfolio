@@ -2,169 +2,263 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- <script src="https://kit.fontawesome.com/e22366414e.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/e22366414e.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="css/all.css">
+  <title>Responsive Sidebar</title>
+  <!-- Link Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/e22366414e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <div class="sidebar">
+    <div class="logo_details">
+      <i class="bx bxl-audible icon"></i>
+      <div class="logo_name">XYZ</div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="s.html">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Dashboar</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="a.html">
+          <i class="bx bx-user"></i>
+          <span class="link_name">User</span>
+        </a>
+        <span class="tooltip">User</span>
+      </li>
+      <li>
+        <a href="b.html">
+          <i class="bx bx-chat"></i>
+          <span class="link_name">Message</span>
+        </a>
+        <span class="tooltip">Message</span>
+      </li>
+      <li>
+        <a href="c.html">
+          <i class="bx bx-pie-chart-alt-2"></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <span class="tooltip">Analytics</span>
+      </li>
+      <li>
+        <a href="d.html">
+          <i class="bx bx-folder"></i>
+          <span class="link_name">Notice</span>
+        </a>
+        <span class="tooltip">Notice</span>
+      </li>
+      <li>
+        <a href="e.html">
+          <i class="bx bx-cart-alt"></i>
+          <span class="link_name">Order</span>
+        </a>
+        <span class="tooltip">Order</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-cog"></i>
+          <span class="link_name">Settings</span>
+        </a>
+        <span class="tooltip">Settings</span>
+      </li>
+      <li class="profile">
+        <div class="profile_details">
+          <img src="profile.jpeg" alt="profile image">
+          <div class="profile_content">
+            <div class="name">shubham sir</div>
+            <div class="designation">Admin</div>
+          </div>
+        </div>
+        <i class="bx bx-log-out" id="log_out"></i>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
     <header class="header">
 
-        <div class="logo">
-            <h2>PortFolio</h2>
+      <div class="logo">
+        <h2>PortFolio</h2>
 
-        </div>
-        <div class="navbar">
-            <a href="#part1" style="--i:1;" class="active">Home</a>
-            <a href="#part2" style="--i:2;">About</a>
-            <a href="#part3" style="--i:3;">Service</a>
-            <a href="#part4" style="--i:4;">Portfolio</a>
-            <a href="#part5" style="--i:5;">Contact</a>
-        </div>
+      </div>
+      <div class="navbar">
+        <a href="#part1" style="--i:1;" class="active">Home</a>
+        <a href="#part2" style="--i:2;">About</a>
+        <a href="#part3" style="--i:3;">Service</a>
+        <a href="#part4" style="--i:4;">Portfolio</a>
+        <a href="#part5" style="--i:5;">Contact</a>
+      </div>
 
     </header>
     <main>
-        <section class="home" id="part1">
-            <div class="content">
-                <div class="part1">
-                    <h3>Hello it's me</h3><br>
-                    <h1>Abhishek kumar</h1><br>
-                    <h3>And i am <span>Frontend developer</span></h3><br>
-                    <p>As a skilled web developer, I possess expertise in various programming languages, including HTML, CSS, JavaScript, SQL, C, C++, and Java. My proficiency in these programming languages enables me to create visually appealing and dynamic websites and web applications that provide an excellent user experience. I am capable of designing responsive user interfaces, handling data efficiently, and implementing complex algorithms and logic to create robust web applications.</p><br>
-                    <div class="social-media">
-                        <a href="https://github.com/KumarAbhishek7033" style="--i:1;"><i class="fa-brands fa-github"></i></a> 
-                        <a href="https://twitter.com/abhishkkr523" style="--i:1;"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/abhishek.angel.946/" style="--i:2;"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/abhishekkr523/" style="--i:3;"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com/in/abhishek-kumar-051158255" style="--i:4;"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                    <a href="https://drive.google.com/file/d/1--x65OJJhDEav0_qSg3WTOBS83kitSJO/view?usp=share_link" class="btn">Download Cv</a>
+      <section class="home" id="part1">
+        <div class="content">
+          <div class="part1">
+            <h3>Hello it's me</h3><br>
+            <h1>Abhishek kumar</h1><br>
+            <h3>And i am <span>Frontend developer</span></h3><br>
+            <p>As a skilled web developer, I possess expertise in various programming languages, including HTML,
+              CSS, JavaScript, SQL, C, C++, and Java. My proficiency in these programming languages enables me
+              to create visually appealing and dynamic websites and web applications that provide an excellent
+              user experience. I am capable of designing responsive user interfaces, handling data
+              efficiently, and implementing complex algorithms and logic to create robust web applications.
+            </p><br>
+            <div class="social-media">
+              <a href="https://github.com/KumarAbhishek7033" style="--i:1;"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/abhishkkr523" style="--i:1;"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.facebook.com/abhishek.angel.946/" style="--i:2;"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/abhishekkr523/" style="--i:3;"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://linkedin.com/in/abhishek-kumar-051158255" style="--i:4;"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1--x65OJJhDEav0_qSg3WTOBS83kitSJO/view?usp=share_link"
+              class="btn">Download Cv</a>
 
-                </div>
-                <div class="part2">
-                    <img src="abhi.jpg" alt="photo" srcset="">
-                </div>
+          </div>
+          <div class="part2">
+            <img src="abhi.jpg" alt="photo" srcset="">
+          </div>
+        </div>
+      </section>
+      <section class="about" id="part2">
+        <div class="container">
+          <div class="a">
+            <img src="abhi.jpg" alt="">
+          </div>
+          <div class="b">
+            <h1>About <span>Me</span></h1>
+            <div class="more">
+              <input type="checkbox" id="check">
+              <h4>Frontend Developer</h4>
+              <p>Hello, my name is Abhishek Kumar and I am a student at Government Engineering College
+                Jhalawar. I am passionate about technology and have recently completed a project based on
+                web development which I am proud to showcase on my LinkedIn profile</p>
+              <div class="hidden">
+                <p>Skills=
+                <pre>
+                          1->Html
+                          2->C.S.S
+                          3->Javascript
+                          4->SQL
+                          5->C
+                          6->C++
+                          7->Java</pre>
+                </p>
+              </div>
+              <label class="read" for="check">read more</label>
             </div>
-        </section>
-        <section class="about" id="part2">
-            <div class="container">
-                <div class="a">
-                    <img src="abhi.jpg" alt="">
-                </div>
-                <div class="b">
-                    <h1>About <span>Me</span></h1>
-                    <div class="more">
-                        <input type="checkbox" id="check">
-                    <h4>Frontend Developer</h4>
-                    <p>Hello, my name is Abhishek Kumar and I am a student at Government Engineering College Jhalawar. I am passionate about technology and have recently completed a project based on web development which I am proud to showcase on my LinkedIn profile</p>
-                        <div class="hidden">
-                        <p>Skills=<pre>
-                            1->Html
-                            2->C.S.S
-                            3->Javascript
-                            4->SQL
-                            5->C
-                            6->C++
-                            7->Java</pre></p>
-                    </div>
-                    <label  class="read" for="check" >read more</label>
-                </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="service" id="part3">
+        <div class="serv">
+          <h1>Our <span>Service</span></h1>
+          <div class="mid">
+            <div class="x">
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Development </h2>
+              <p>As a web developer, I provide a wide range of web development services that help businesses
+                establish their online presence and achieve their digital goals.</p>
             </div>
-        </section>
-        <section class="service" id="part3">
-            <div class="serv">
-                <h1>Our <span>Service</span></h1>
-                <div class="mid">
-                    <div class="x">
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web Development </h2>
-                        <p>As a web developer, I provide a wide range of web development services that help businesses establish their online presence and achieve their digital goals.</p>
-                    </div>
-                    <div class="y">
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Graphic Design</h2>
-                        <p> As a graphic designer, I provide a wide range of design services that help businesses establish their brand identity and effectively communicate their message.</p>
-                    </div>
-                </div>
+            <div class="y">
+              <i class="fa-solid fa-code"></i>
+              <h2>Graphic Design</h2>
+              <p> As a graphic designer, I provide a wide range of design services that help businesses
+                establish their brand identity and effectively communicate their message.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="portfolio" id="part4">
+        <div class="con">
+          <h1>Latest <span>Project</span></h1>
+          <div class="pro">
+            <div class="div1">
+              <div id="pro1" class="partition">
+                <h3>Web Design</h3>
+                <p>A responsive sports website for government engineering college jhalawar.for visiting
+                  click on the icon(giben bellow).</p>
+                <a href="http://gecj.ac.in/Gecj_Sports/Gecj_Sports_Responsive-master/index.html"><i
+                    class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+              <div id="pro2" class="partition">
+                <h3>Web Design</h3>
+                <i class="fa-solid fa-square-xmark"></i>
+              </div>
+              <div id="pro3" class="partition">
+                <h3>Web Design</h3>
+                <i class="fa-solid fa-square-xmark"></i>
+              </div>
+            </div>
+            <div class="div2">
+              <div id="pro4" class="partition">
+                <h3>Web Design</h3>
+                <i class="fa-solid fa-square-xmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contect" id="part5">
+        <div class="cm">
+          <div class="cm1">
+            <h1>Contact <span> Me!</span></h1>
+          </div>
+          <div class="cm2">
+            <div class="cm2a row">
+              <!-- <input type="text" placeholder="Full Name" class="row">
+                      <input type="email" placeholder="Email Address" class="row"> -->
+              <i class="fa-solid fa-square-phone mar"></i>
+              <p class="mar">Phone= 7033631312</p>
+            </div>
+            <div class="cm2b row">
+              <!-- <input type="number" placeholder="Mobile Number" class="row">
+                      <input type="text" placeholder="Email Subject" class="row"> -->
+              <i class="fa-solid fa-envelope mar"></i>
+              <p class="mar"> Email= codemanabhi@gmail.com </p>
+            </div>
+            <div class="cm2c row">
+              <i class="fa-brands fa-linkedin mar"></i>
+              <p class="mar">Linkdin =linkedin.com/in/abhishekkr523 </p>
+            </div>
+            <div class="cm2d row">
+              <i class="fa-brands fa-github mar"></i>
+              <p class="mar">github=https://github.com/KumarAbhishek7033</p>
 
             </div>
-        </section>
-        <section class="portfolio" id="part4">
-            <div class="con">
-                <h1>Latest <span>Project</span></h1>
-                <div class="pro">
-                    <div class="div1">
-                        <div id="pro1" class="partition">
-                            <h3>Web Design</h3>
-                            <p>A responsive sports website for government engineering college jhalawar.for visiting click on the icon(giben bellow).</p>
-                            <a href="http://gecj.ac.in/Gecj_Sports/Gecj_Sports_Responsive-master/index.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                        <div id="pro2" class="partition">
-                            <h3>Web Design</h3>
-                            <i class="fa-solid fa-square-xmark"></i>
-                        </div>
-                        <div id="pro3" class="partition">
-                            <h3>Web Design</h3>
-                            <i class="fa-solid fa-square-xmark"></i>
-                        </div>
-                    </div>
-                    <div class="div2">
-                        <div id="pro4" class="partition">
-                            <h3>Web Design</h3>
-                            <i class="fa-solid fa-square-xmark"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contect" id="part5">
-            <div class="cm">
-                <div class="cm1">
-                    <h1>Contact <span> Me!</span></h1>
-                </div>
-                <div class="cm2">
-                    <div class="cm2a row">
-                        <!-- <input type="text" placeholder="Full Name" class="row">
-                        <input type="email" placeholder="Email Address" class="row"> -->
-                        <i class="fa-solid fa-square-phone mar"></i>
-                        <p class="mar">Phone= 7033631312</p>
-                    </div>
-                    <div class="cm2b row">
-                        <!-- <input type="number" placeholder="Mobile Number" class="row">
-                        <input type="text" placeholder="Email Subject" class="row"> -->
-                        <i class="fa-solid fa-envelope mar" ></i>
-                        <p class="mar">  Email= codemanabhi@gmail.com</p>
-                    </div>
-                    <div class="cm2c row">
-                        <i class="fa-brands fa-linkedin mar"></i>
-                        <p class="mar">Linkdin =linkedin.com/in/abhishekkr523 </p>
-                    </div>
-                    <div class="cm2d row">
-                        <i class="fa-brands fa-github mar"></i>
-                        <p class="mar">github=https://github.com/KumarAbhishek7033</p>
-
-                    </div>
-                </div>
-                <div class="cm3">
-                    <!-- <input type="text" placeholder="Your Message" class="bh"> -->
-                </div>
-                <button class="sms">Send Me SMS</button>
-            </div>
-        </section>
+          </div>
+          <div class="cm3">
+            <!-- <input type="text" placeholder="Your Message" class="bh"> -->
+          </div>
+          <button class="sms">Send Me SMS</button>
+        </div>
+      </section>
     </main>
     <footer>
-<div class="foot"> 
-    <p>&#169 myportfolio | Privacy policy | some rights reserved
+      <div class="foot">
+        <p>&#169 myportfolio | Privacy policy | some rights reserved
 
-    </p>
-</div>
+        </p>
+      </div>
     </footer>
+
+    </div>
+
+  </section>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 
 </html>
