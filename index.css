@@ -7,20 +7,38 @@ body {
     background-color: #1f242d;
     color: #fff;
     overflow-x: hidden;
-    font-family:  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Arial, sans-serif;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Arial, sans-serif;
     /* margin: 0; */
-    width: 100vw;
-    padding: 4vw;
+    width: 100%;
+    /* padding: 4vw; */
     /* height: auto; */
 }
-p{
-    font-size:20px;
+
+p {
+    font-size: 20px;
     line-height: 25px;
 }
 
+/* .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+} */
+
 .navbox {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 90%;
     background: transparent;
+    /* background-color: #a02626; */
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -34,6 +52,7 @@ p{
     display: none;
     flex-direction: column;
     width: 5%;
+    background-color: chocolate;
 }
 
 .bar {
@@ -44,18 +63,27 @@ p{
 }
 
 .logo {
-    margin-left: -30px;
     font-weight: 600;
     cursor: default;
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     width: 50%;
+    /* position: fixed;
+    top: 20px;
+    left: 0; */
+    /* margin-left: 10vw; */
+    /* background-color: #0ef; */
     animation: slideRight 1s ease forwards;
 }
 
 .nav-list {
+    /* position: fixed;
+    top: 20px;
+    right: 20px; */
+    /* margin-right: 10vw; */
     width: 40%;
     display: flex;
+    /* background-color: chartreuse; */
     justify-content: space-between;
 }
 
@@ -75,20 +103,34 @@ p{
 .nav-list a.active {
     color: #0ef;
 }
-main{
+
+main {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-color: rgb(247, 0, 255); */
 }
+
+/* .home{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(202, 156, 156);
+} */
 .home {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding: 20px; */
+    /* background-color: blueviolet; */
 }
 
 .part1 {
@@ -97,6 +139,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
+    /* margin-left: 10vw; */
 }
 
 .part1 h3 {
@@ -264,14 +308,16 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 75vh;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .b {
     width: 100%;
-    height: 30vh;
-/* margin-left: 10vw; */
+    height: 42vh;
+    /* margin-left: 10vw; */
 }
 
 .b h1 {
@@ -302,6 +348,7 @@ main{
     animation-delay: .7s;
     padding: 4px;
 }
+
 label {
     display: inline-block;
     margin-top: 10px;
@@ -310,9 +357,11 @@ label {
     cursor: pointer;
     font-weight: 600;
 }
-label a{
+
+label a {
     text-decoration: none;
 }
+
 .read {
     position: relative;
     margin-left: 5vw;
@@ -330,8 +379,11 @@ label a{
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
 }
+
 .more {
     width: 100%;
+    /* background: #fff; */
+    /* padding: 20px; */
     box-sizing: 0 0 5px black;
 
 }
@@ -358,12 +410,14 @@ label a{
     display: none;
     transition: 0.5s linear;
 }
+
+/* our service section css */
 .service {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 78vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -398,6 +452,7 @@ label a{
     background-color: #00040b;
     border: 2px #0ef;
     border-radius: 40px;
+    /* margin-left: 10vw; */
 
 }
 
@@ -434,6 +489,7 @@ label a{
     background-color: #00040b;
     border: 2px #0ef;
     border-radius: 40px;
+    /* margin-right: 10vw; */
 }
 
 .y i {
@@ -465,8 +521,8 @@ label a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    width: 100%;
+    height: 122vh;
+    width: 100vw;
 }
 
 .portfolio h1 {
@@ -480,12 +536,12 @@ label a{
     color: #0ef
 }
 
-.portfolio {
+/* .portfolio {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: -30px;
-}
+} */
 
 .div1 {
     display: flex;
@@ -499,7 +555,8 @@ label a{
     height: 30vh;
     border: 2px solid black;
     border-radius: 40px;
-    margin-left: 30px;
+    margin: 10px;
+    /* padding: 40px; */
     margin-top: 40px;
     padding: 20px;
     display: flex;
@@ -576,22 +633,22 @@ label a{
 }
 
 /* content css----------> */
-/* .contect{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-} */
-.contect{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    width: 100%;
-}
 
+.contect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(255, 77, 0); */
+}
+.cm1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: burlywood; */
+}
 .cm1 h1 {
     font-size: 50px;
     opacity: 0;
@@ -602,8 +659,14 @@ label a{
 
 .cm1 h1 span {
     color: #0ef
+} 
+.cm2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: cornflowerblue; */
 }
-
 .row {
     display: flex;
     align-items: center;
@@ -685,14 +748,14 @@ label a{
 @media screen and (max-width: 768px) {
     .toggle-button {
         display: flex;
-         /* flex-direction: column;
+        /* flex-direction: column;
         position: absolute; */
     }
 
     .nav-list {
         display: none;
         flex-direction: column;
-        position: absolute; 
+        position: absolute;
         top: 70px;
         left: 0;
         width: 100%;
@@ -703,24 +766,28 @@ label a{
     .nav-list a {
         margin: 5px 0;
     }
-    .home{
-       height: 50vh;
+
+    .home {
+        height: 70vh;
     }
-    .home .part1{
+
+    .home .part1 {
         width: 100vw;
         /* margin: 0; */
     }
-    .home .part2{
+
+    .home .part2 {
         display: none;
     }
+
     .social-media {
         width: 70vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    
-    
+
+
     .social-media a {
         display: inline-flex;
         align-items: center;
@@ -746,9 +813,10 @@ label a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 126vh;
+        height: 165vh;
         width: 100%;
     }
+
     .mid {
         display: flex;
         flex-direction: column;
@@ -757,12 +825,13 @@ label a{
         position: relative;
         margin-top: 6vh;
         width: 100%;
-    height: 120vh;
+        height: 120vh;
     }
+
     .service h1 span {
         color: #0ef
     }
-    
+
     .x {
         display: flex;
         flex-direction: column;
@@ -775,14 +844,14 @@ label a{
         border: 2px #0ef;
         border-radius: 40px;
         /* margin-left: 10vw; */
-    
+
     }
-    
+
     .x i {
         font-size: 40px;
         color: #0ef;
     }
-    
+
     .x h2 {
         font-size: 32px;
         font-weight: 700;
@@ -790,17 +859,17 @@ label a{
         animation: slideBottom 1s ease forwards;
         animation-delay: .7s;
     }
-    
+
     .x p {
         opacity: 0;
         animation: slideLeft 1s ease forwards;
         animation-delay: 1s;
     }
-    
+
     .x button {
         margin-left: -10px;
     }
-    
+
     .y {
         display: flex;
         flex-direction: column;
@@ -814,12 +883,12 @@ label a{
         border-radius: 40px;
         /* margin-right: 10vw; */
     }
-    
+
     .y i {
         font-size: 40px;
         color: #0ef;
     }
-    
+
     .y h2 {
         font-size: 32px;
         font-weight: 700;
@@ -827,17 +896,17 @@ label a{
         animation: slideBottom 1s ease forwards;
         animation-delay: .7s;
     }
-    
+
     .y p {
         opacity: 0;
         animation: slideLeft 1s ease forwards;
         animation-delay: 1s;
     }
-    
+
     .y button {
         margin-left: -10px;
     }
-    
+
 
 
 
@@ -847,41 +916,42 @@ label a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 185vh;
+        height: 184vh;
         width: 100%;
 
     }
-    
+
     .portfolio h1 {
         font-size: 50px;
         opacity: 0;
         animation: slideRight 1s ease forwards;
         animation-delay: 1s;
     }
-    
+
     .portfolio h1 span {
         color: #0ef
     }
-    
+
     /* .portfolio {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-left: -30px;
     } */
-    .pro{
+    .pro {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
     }
+
     .div1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .partition {
         width: 90vw;
         height: 30vh;
@@ -895,35 +965,35 @@ label a{
         justify-content: center;
         align-items: center;
     }
-    
+
     #pro1 {
         background-color: #00040b;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
-    
+
     #pro2 {
         background-color: #00040b;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
-    
+
     #pro3 {
         background-color: #00040b;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
-    
+
     #pro4 {
         background-color: #00040b;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
-    
+
     .partition h3 {
         font-size: 32px;
         font-weight: 700;
@@ -931,13 +1001,13 @@ label a{
         animation: slideBottom 1s ease forwards;
         animation-delay: .7s;
     }
-    
+
     .partition p {
         opacity: 0;
         animation: slideLeft 1s ease forwards;
         animation-delay: 1s;
     }
-    
+
     .partition i {
         display: inline-flex;
         align-items: center;
@@ -956,7 +1026,7 @@ label a{
         animation: slideLeft .5s ease forwards;
         animation-delay: calc(.2s * var(--i));
     }
-    
+
     .partition i:hover {
         color: black;
         background-color: #0ef;
@@ -968,16 +1038,16 @@ label a{
         display: flex;
         align-items: center;
         justify-content: center;
-        height:58vh;
+        height: 95vh;
         width: 100%;
         /* margin-top: -24vh; */
     }
-    
+
     /* .b {
         width: 100%;
         height: 30vh; */
-    }
-    
+    /* } */
+
     .b h1 {
         font-size: 50px;
         padding: 18px;
@@ -986,17 +1056,17 @@ label a{
         animation-delay: 1s;
         /* margin-left: 20px; */
     }
-    
+
     .b span {
-        color: #0ef
+        color: #0ef;
     }
-    
+
     .b p {
         opacity: 0;
         animation: slideLeft 1s ease forwards;
         animation-delay: 1s;
     }
-    
+
     .b h4 {
         font-size: 32px;
         font-weight: 700;
@@ -1005,6 +1075,7 @@ label a{
         animation-delay: .7s;
         padding: 4px;
     }
+
     label {
         display: inline-block;
         margin-top: 10px;
@@ -1013,6 +1084,7 @@ label a{
         cursor: pointer;
         font-weight: 600;
     }
+
     .read {
         position: relative;
         margin-left: 5vw;
@@ -1030,46 +1102,48 @@ label a{
         animation: slideTop 1s ease forwards;
         animation-delay: 2s;
     }
+
     .more {
         width: 85%;
         /* background: #fff; */
         /* padding: 20px; */
         box-sizing: 0 0 5px black;
-    
+
     }
-    
+
     .more h4 {
         margin-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;
-    
+
     }
-    
+
     .more p {
         line-height: 1.4;
         text-align: justify;
     }
-    
+
     #check {
         display: none;
-    
+
     }
-    
+
     .hidden {
         display: none;
         transition: 0.5s linear;
     }
 
     /* contect******************************************************************* */
-    .contect{
+    .contect {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 57vh;
+        /* height: 57vh; */
+        height: 105vh;
         width: 100%;
     }
-    
+
     .cm1 h1 {
         font-size: 50px;
         opacity: 0;
@@ -1078,11 +1152,11 @@ label a{
         animation-delay: 1s;
         padding-bottom: 30px;
     }
-    
+
     .cm1 h1 span {
         color: #0ef
     }
-    
+
     .row {
         display: flex;
         align-items: center;
@@ -1094,12 +1168,12 @@ label a{
         border-radius: 4px;
         border: 2px solid#0ef;
     }
-    
+
     .mar {
         /* margin-left: 20px; */
         padding: 14px;
     }
-    
+
     .bh {
         width: 25vw;
         height: 20vh;
@@ -1109,13 +1183,13 @@ label a{
         border-radius: 4px;
         border: 2px solid#0ef;
     }
-    
+
     .cm button {
         margin-left: -9px;
     }
-    
+
     .sms {
-    
+
         position: relative;
         margin-left: 5vw;
         display: inline-block;
@@ -1131,10 +1205,10 @@ label a{
         border-radius: 20px;
         animation: slideTop 1s ease forwards;
         animation-delay: 2s;
-    
+
     }
-    
-    
-    
-    
+
+
+
+
 }
