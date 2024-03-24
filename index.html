@@ -12,23 +12,17 @@
 </head>
 
 <body>
-    <!-- <div class="toggle"><div class="toggle-button" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div></div> -->
     <div class="navbox">
-        <div class="toggle">
-            <div class="toggle-button" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <div class="right-section">
+            <div class="logo">
+                <h2>PortFolio</h2>
+            </div>
+            <div class="toggle-button" >
+                <i class="fa-solid fa-bars" onclick="toggleMenu1()"></i>
+                <i class="fa-solid fa-xmark cross-icon" onclick="toggleMenu2()"></i>
             </div>
         </div>
-        <div class="logo">
-            <h2>PortFolio</h2>
 
-        </div>
         <div class="nav-list">
             <a href="#part1" class="active">Home</a>
             <a href="#part2">About</a>
@@ -38,21 +32,10 @@
         </div>
 
     </div>
-    <!-- <div class="navbox">
-        <div class="toggle-button" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="nav-list">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
-        </div>
-    </div> -->
+    
     <main>
-        
-        <section class="home" id="part1">
+
+        <section class="home fadeIn" id="part1">
 
             <div class="part1">
                 <h3>Hello it's me</h3><br>
@@ -81,12 +64,9 @@
             </div>
 
         </section>
-        <section class="about" id="part2">
-            <!-- <div class="container"> -->
-            <!-- <div class="a">
-                    <img src="abhi.jpg" alt="">
-                </div> -->
-            <div class="b">
+        <section class="about fadeIn" id="part2">
+            
+            <div class="about-inner">
                 <h1>About <span>Me</span></h1>
                 <div class="more">
                     <input type="checkbox" id="check">
@@ -98,9 +78,8 @@
                     <label class="read" for="check"> <a href="https://github.com/abhishekkr523">Read more.</a></label>
                 </div>
             </div>
-            <!-- </div> -->
         </section>
-        <section class="service" id="part3">
+        <section class="service fadeIn" id="part3">
 
             <h1>Our <span>Service</span></h1>
             <div class="mid">
@@ -120,33 +99,36 @@
 
             </div>
         </section>
-        <section class="portfolio" id="part4">
+        <section class="portfolio fadeIn" id="part4">
 
             <h1>Latest <span>Project</span></h1>
             <div class="pro">
-                <div class="div1">
                     <div id="pro1" class="partition">
                         <h3>Web Design</h3>
                         <p>A responsive sports website for government engineering college jhalawar.for visiting
                             click on the icon(giben bellow).</p>
-                        <a href="http://gecj.ac.in/Gecj_Sports/Gecj_Sports_Responsive-master/index.html"><i
-                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="http://gecj.ac.in/Gecj_Sports/Gecj_Sports_Responsive-master/index.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <div id="pro2" class="partition">
                         <h3>Web Design</h3>
+                         <p>A responsive sports website for government engineering college jhalawar.for visiting
+                            click on the icon(giben bellow).</p>
                         <i class="fa-solid fa-square-xmark"></i>
                     </div>
                     <div id="pro3" class="partition">
                         <h3>Web Design</h3>
+                         <p>A responsive sports website for government engineering college jhalawar.for visiting
+                            click on the icon(giben bellow).</p>
                         <i class="fa-solid fa-square-xmark"></i>
                     </div>
-                </div>
-                <div class="div2">
+               
                     <div id="pro4" class="partition">
                         <h3>Web Design</h3>
+                         <p>A responsive sports website for government engineering college jhalawar.for visiting
+                            click on the icon(giben bellow).</p>
                         <i class="fa-solid fa-square-xmark"></i>
                     </div>
-                </div>
+                
             </div>
 
         </section>
@@ -157,47 +139,49 @@
             </div>
             <div class="cm2">
                 <div class="cm2a row">
-                    <!-- <input type="text" placeholder="Full Name" class="row">
-                        <input type="email" placeholder="Email Address" class="row"> -->
                     <i class="fa-solid fa-square-phone mar"></i>
                     <p class="mar">Phone= 7033631312</p>
                 </div>
                 <div class="cm2b row">
-                    <!-- <input type="number" placeholder="Mobile Number" class="row">
-                        <input type="text" placeholder="Email Subject" class="row"> -->
                     <i class="fa-solid fa-envelope mar"></i>
                     <p class="mar"> Email= codemanabhi@gmail.com</p>
                 </div>
-                <!-- <div class="cm2c row">
-                    <i class="fa-brands fa-linkedin mar"></i>
-                    <p class="mar">Linkdin =linkedin.com/in/abhishekkr523 </p>
-                </div>
-                <div class="cm2d row">
-                    <i class="fa-brands fa-github mar"></i>
-                    <p class="mar">github=https://github.com/abhishekkr523</p>
-
-                </div> -->
-            </div>
-            <div class="cm3">
-                <!-- <input type="text" placeholder="Your Message" class="bh"> -->
             </div>
             <button class="sms">Send Me SMS</button>
 
         </section>
     </main>
     <footer>
-        <div class="foot">
-            <p>&#169 myportfolio | Privacy policy | some rights reserved
-
-            </p>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+            <div class="footer-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <p>123 Street Name, City, Country</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1234567890</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 myportfolio | Privacy policy | All rights reserved.</p>
         </div>
     </footer>
+    
 
-    <script>function toggleMenu() {
-            var navList = document.querySelector('.nav-list');
-            navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
