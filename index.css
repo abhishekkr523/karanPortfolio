@@ -1192,6 +1192,11 @@ footer {
     .social-media a {
         margin: 3px;
     }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
