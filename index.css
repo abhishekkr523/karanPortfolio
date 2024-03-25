@@ -136,7 +136,7 @@ main {
 }
 
 .part1 h1 {
-    font-size: 50px;
+    font-size: 35px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
@@ -488,6 +488,13 @@ label a {
 .y button {
     margin-left: -10px;
 }
+.service .more{
+    margin-top: 100px;
+    width: 100%;
+}
+.service .more h4{
+font-size: 30px;
+}
 
 /* portfolio css----------> */
 .portfolio {
@@ -725,7 +732,7 @@ footer {
 }
 
 .footer-center ul li a {
-    color: #fff;
+    color: #0ef;
 }
 
 .footer-bottom {
@@ -762,8 +769,7 @@ footer {
     .nav-list {
         display: none;
         flex-direction: column;
-        width: calc(100vw - 20px);
-        padding-left: 20px;
+        width: 100% !important;
     }
 
     .nav-list .a {
@@ -795,10 +801,11 @@ footer {
     }
 
     .social-media {
-        width: 70vw;
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        padding-top: 10px;
     }
 
 
@@ -820,14 +827,13 @@ footer {
         animation-delay: calc(.2s * var(--i));
     }
 
-
     /* service************************************************************************** */
     .service {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 165vh;
+        height: 255vh;
         width: 100%;
     }
 
@@ -1186,7 +1192,7 @@ footer {
 
 @media screen and (max-width:498px) {
     .home .part1 {
-        margin-top: 20px;
+        margin-top: 94px;
     }
 
     .social-media a {
